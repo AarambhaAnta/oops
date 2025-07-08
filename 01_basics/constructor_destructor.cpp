@@ -12,8 +12,16 @@ using namespace std;
 // - Destructor
 // - Demonstrate different ways to create objects
 
-int main()
-{
+class BankAccount {
+private:
+    string accountNumber;
+    string accountHolder;
+    double balance;
+public:
+
+};
+
+int main() {
     // TODO: Create objects using different constructors
     return 0;
 }
