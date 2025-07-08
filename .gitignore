@@ -1,0 +1,73 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Executables (no extension)
+01_basics/class_and_object
+01_basics/constructor_destructor
+01_basics/static_members
+01_basics/friend_function
+02_encapsulation/data_hiding
+02_encapsulation/getter_setter
+02_encapsulation/class_invariants
+03_inheritance/single_inheritance
+03_inheritance/multiple_inheritance
+03_inheritance/multilevel_inheritance
+03_inheritance/diamond_problem
+04_polymorphism/function_overloading
+04_polymorphism/operator_overloading
+04_polymorphism/virtual_functions
+04_polymorphism/abstract_classes
+05_abstraction/abstract_data_types
+05_abstraction/interfaces
+05_abstraction/data_abstraction
+06_advanced_concepts/raii
+06_advanced_concepts/exception_handling
+06_advanced_concepts/templates
+06_advanced_concepts/advanced_operators
+06_advanced_concepts/move_semantics
+07_design_patterns/singleton
+07_design_patterns/factory
+07_design_patterns/observer
+07_design_patterns/strategy
+07_design_patterns/decorator
+08_projects/library_management
+08_projects/banking_system
+08_projects/student_management
+08_projects/game_engine
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# VS Code files
+.vscode/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+!Makefile
+
+# Temporary files
+*~
+*.swp
+*.swo
+.DS_Store
