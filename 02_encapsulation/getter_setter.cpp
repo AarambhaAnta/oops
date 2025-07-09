@@ -12,8 +12,22 @@ using namespace std;
 // - Methods to buy/sell products
 // - Demonstrate controlled access
 
-int main()
-{
+class Product {
+private:
+    string name;
+    double price;
+    int stock;
+
+public:
+    // Constructor & Destructor
+    Product(const string& name = "", const double& price = 0.0, const int& stock = 0)
+        : name(name), price(price), stock(stock) {}
+    // Getter & Setter
+
+    // Utilities
+};
+
+int main() {
     // TODO: Test getter/setter validation
     return 0;
 }
