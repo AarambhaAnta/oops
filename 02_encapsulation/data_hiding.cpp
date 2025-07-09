@@ -12,8 +12,25 @@ using namespace std;
 // - Validate data in setters
 // - Demonstrate data hiding principles
 
-int main()
-{
+class Empolyee {
+private:
+    double salary;
+    int id;
+
+protected:
+    string department;
+
+public:
+    string name;
+
+    // Constructor & destructor
+
+    // Getters & Setters;
+
+    // Utilities
+};
+
+int main() {
     // TODO: Show how encapsulation protects data
     return 0;
 }
