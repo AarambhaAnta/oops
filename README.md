@@ -347,7 +347,23 @@ Each section builds upon previous concepts, ensuring a solid understanding of OO
 ## 🎓 Learning Path
 
 ```mermaid
-Basics → Encapsulation → Inheritance → Polymorphism → Abstraction → Advanced → Patterns → Projects
+graph TD
+    A[Basics]
+    B[Encapsulation]
+    C[Inheritance]
+    D[Polymorphism]
+    E[Abstraction]
+    F[Advanced]
+    G[Patterns]
+    H[Projects]
+
+    A-->B
+    B-->C
+    C-->D
+    D-->E
+    E-->F
+    F-->G
+    G-->H
 ```
 
 Each step builds foundational knowledge for the next, ensuring a comprehensive understanding of OOP principles and their practical applications.
