@@ -50,6 +50,40 @@
 08_projects/student_management
 08_projects/game_engine
 
+# Test executables
+tests/01_basics/test_class_and_object
+tests/01_basics/test_constructor_destructor
+tests/01_basics/test_static_members
+tests/01_basics/test_friend_function
+tests/02_encapsulation/test_data_hiding
+tests/02_encapsulation/test_getter_setter
+tests/02_encapsulation/test_class_invariants
+tests/03_inheritance/test_single_inheritance
+tests/03_inheritance/test_multiple_inheritance
+tests/03_inheritance/test_multilevel_inheritance
+tests/03_inheritance/test_diamond_problem
+tests/04_polymorphism/test_function_overloading
+tests/04_polymorphism/test_operator_overloading
+tests/04_polymorphism/test_virtual_functions
+tests/04_polymorphism/test_abstract_classes
+tests/05_abstraction/test_abstract_data_types
+tests/05_abstraction/test_interfaces
+tests/05_abstraction/test_data_abstraction
+tests/06_advanced_concepts/test_raii
+tests/06_advanced_concepts/test_exception_handling
+tests/06_advanced_concepts/test_templates
+tests/06_advanced_concepts/test_advanced_operators
+tests/06_advanced_concepts/test_move_semantics
+tests/07_design_patterns/test_singleton
+tests/07_design_patterns/test_factory
+tests/07_design_patterns/test_observer
+tests/07_design_patterns/test_strategy
+tests/07_design_patterns/test_decorator
+tests/08_projects/test_library_management
+tests/08_projects/test_banking_system
+tests/08_projects/test_student_management
+tests/08_projects/test_game_engine
+
 # Debug files
 *.dSYM/
 *.su

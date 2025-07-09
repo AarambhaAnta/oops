@@ -346,7 +346,7 @@ Each section builds upon previous concepts, ensuring a solid understanding of OO
 
 ## 🎓 Learning Path
 
-```bash
+```mermaid
 Basics → Encapsulation → Inheritance → Polymorphism → Abstraction → Advanced → Patterns → Projects
 ```
 
