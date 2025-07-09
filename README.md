@@ -348,18 +348,46 @@ Each section builds upon previous concepts, ensuring a solid understanding of OO
 
 ```mermaid
 graph TD
-    A[Basics]
-    B[Encapsulation]
-    C[Inheritance]
-    D[Polymorphism]
-    E[Abstraction]
-    F[Advanced]
-    G[Patterns]
-    H[Projects]
+    A(Basics)
+    B(Encapsulation)
+    C(Inheritance)
+    D(Polymorphism)
+    E(Abstraction)
+    F(Advanced)
+    G(Patterns)
+    H(Projects)
+
+    A1(Class & Object)
+    A2(Constructor & Destructor)
+    A3(Static members)
+    A4(Friend function)
+
+    B1(Data hiding)
+    B2(Getter & Setter)
+    B3(Class invariants)
+
+    C1(Single inheritance)
+    C2(Multiple inheritance)
+    C3(Multi-level inheritance)
+    C4(Diamond problem)
 
     A-->B
+    A-->A1
+    A-->A2
+    A-->A3
+    A-->A4
+
     B-->C
+    B-->B1
+    B-->B2
+    B-->B3
+
     C-->D
+    C-->C1
+    C-->C2
+    C-->C3
+    C-->C4
+    
     D-->E
     E-->F
     F-->G
