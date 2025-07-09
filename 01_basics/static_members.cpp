@@ -10,8 +10,20 @@ using namespace std;
 // - Instance methods to increment/decrement
 // - Demonstrate static vs non-static behavior
 
-int main()
-{
+class Counter {
+private:
+    static int objCount;
+    int value;
+
+public:
+    Counter(const int& val = 0) : value(val) {}
+    ~Counter() {};
+
+    // getters
+
+    // setters
+};
+int main() {
     // TODO: Create multiple objects and show static behavior
     return 0;
 }
