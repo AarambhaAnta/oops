@@ -12,8 +12,31 @@ using namespace std;
 // - Handle potential naming conflicts
 // - Demonstrate multiple inheritance usage
 
-int main()
-{
+class Flyable {
+protected:
+    int altitude;
+    int speed;
+
+public:
+};
+
+class Swimmable {
+protected:
+    int depth;
+    int swimSpeed;
+
+public:
+};
+
+class Duck : public Flyable, public Swimmable {
+private:
+    string name;
+    string species;
+
+public:
+};
+
+int main() {
     // TODO: Create Duck object and use both interfaces
     return 0;
 }
