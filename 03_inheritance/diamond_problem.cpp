@@ -40,14 +40,14 @@ public:
     }
 };
 
-class Student : public Person {
+class Student : public virtual Person {
 private:
     string studentId;
 
 public:
-    Student(string name = "", int age = 0, string studentId = 0)
+    Student(string name = "", int age = 0, string studentId = "")
         : Person(name, age), studentId(studentId) {
-        cout << "Student Constructro..." << endl;
+        cout << "Student Constructor..." << endl;
     }
     virtual ~Student() {
         cout << "Student Destructor..." << endl;
@@ -65,7 +65,7 @@ public:
     }
 };
 
-class Teacher : public Person {
+class Teacher : public virtual Person {
 private:
     string subject;
 
@@ -93,16 +93,19 @@ public:
 class TeachingAssistant : public Student, public Teacher {
 public:
     TeachingAssistant(string name = "", int age = 0, string studentId = "", string subject = "")
-        : Student(name, age, studentId), Teacher(name, age, subject) {
+        : Person(name, age), Student(name, age, studentId), Teacher(name, age, subject) {
         cout << "TeachingAssistant Constructor..." << endl;
     }
     ~TeachingAssistant() {
-        cout << "TeachingAssistant Desturctor..." << endl;
+        cout << "TeachingAssistant Destructor..." << endl;
     }
 
     void displayInfo() const override {
-        Student::displayInfo();
-        Teacher::displayInfo();
+        Person::displayInfo();
+        cout << "\n<--Student Info-->" << endl;
+        cout << "Student Id: " << getStudentId() << endl;
+        cout << "\n<--Teacher Info-->" << endl;
+        cout << "Subject: " << getSubject() << endl;
     }
 };
 
@@ -112,9 +115,17 @@ int main() {
     cout << "\n===Diamond Problem Demonstration===\n" << endl;
 
     TeachingAssistant ta("Alice", 25, "ST001", "Computer Science");
-    // cout << "Name: " << ta.getName() << endl;  // Compilation erro due to ambiguity
+
+    cout << "Name: " << ta.getName() << endl;  // ambiguity resolved
     cout << "\nName: " << ta.Student::getName() << endl;
     ta.displayInfo();
 
+    Person* personPtr = &ta;  // ambiguity resolved
+    Student* studentPtr = &ta;
+    Teacher* teacherPtr = &ta;
+
+    cout << "Through Person pointer: " << personPtr->getName() << endl;
+    cout << "Through Student pointer: " << studentPtr->getName() << endl;
+    cout << "Through Teacher pointer: " << teacherPtr->getName() << endl;
     return 0;
 }
