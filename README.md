@@ -371,16 +371,21 @@ graph TD
     C3(Multi-level inheritance)
     C4(Diamond problem)
 
+    D1(Function overloading)
+    D2(Operator overloading)
+    D3(Virtual Functions)
+    D4(Abstract classes)
+
     A-->B
     A-->A1
     A-->A2
     A-->A3
     A-->A4
 
-    B-->C
     B-->B1
     B-->B2
     B-->B3
+    B-->C
 
     C-->D
     C-->C1
@@ -388,7 +393,12 @@ graph TD
     C-->C3
     C-->C4
     
+    D-->D1
+    D-->D2
+    D-->D3
+    D-->D4
     D-->E
+    
     E-->F
     F-->G
     G-->H
